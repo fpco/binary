@@ -1,4 +1,4 @@
-name:            binary
+name:            binary-ide-backend
 version:         0.7.3.0
 license:         BSD3
 license-file:    LICENSE
@@ -52,6 +52,7 @@ library
       build-depends: ghc-prim
 
   ghc-options:     -O2 -Wall -fliberate-case-threshold=1000
+  exposed:         False
 
 -- Due to circular dependency, we cannot make any of the test-suites or
 -- benchmark depend on the binary library. Instead, for each test-suite and
